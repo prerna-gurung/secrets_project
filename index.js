@@ -4,7 +4,7 @@ import express from "express";
 import axios from "axios";
 
 // 2. Create an express app and set the port number.
-const port=3000;
+const port=process.env.PORT || 3000;
 const app = express();
 const URL = "https://secrets-api.appbrewery.com";
 // 3. Use the public folder for static files.
